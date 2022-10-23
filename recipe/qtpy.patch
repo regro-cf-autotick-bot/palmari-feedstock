@@ -1,0 +1,27 @@
+diff --git a/src/palmari/_runner.py b/src/palmari/_runner.py
+index 420d72b..4dc76d1 100644
+--- a/src/palmari/_runner.py
++++ b/src/palmari/_runner.py
+@@ -13,17 +13,17 @@ from qtpy.QtWidgets import (
+     QHBoxLayout,
+     QLabel,
+ )
+-from PyQt5.QtCore import pyqtSignal
++from qtpy.QtCore import Signal
+ from magicgui.widgets import FileEdit, FloatSpinBox, LineEdit, ProgressBar
+ from threading import Thread
+ 
+ 
+ class PipelineRunner(QWidget):
+ 
+-    progressChanged = pyqtSignal(int)
+-    progressRunning = pyqtSignal(bool)
+-    nFilesChanged = pyqtSignal(int)
+-    nameProcessingFile = pyqtSignal(str)
++    progressChanged = Signal(int)
++    progressRunning = Signal(bool)
++    nFilesChanged = Signal(int)
++    nameProcessingFile = Signal(str)
+ 
+     def __init__(self):
+         super().__init__()
