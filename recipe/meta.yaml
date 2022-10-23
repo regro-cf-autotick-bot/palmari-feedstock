@@ -1,5 +1,5 @@
 {% set name = "palmari" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,31 +7,40 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/palmari-{{ version }}.tar.gz
-  sha256: 6c7b4bd481ce6d83e944010bc4495f2a6c2e5137fcbafc7a04d81a0de8c93888
+  sha256: 51cbe731e96db0bc4719082e2e91990488d5eaba35c756df0e4410c4dc1c3358
+  patches:
+    - qtpy.patch  # Use qtpy instead of PyQt5
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - pip
     - python >=3.8
   run:
+    - click
     - dask-core >=2022.1.0
     - dask-image >=2021.12.0
+    - imageio-ffmpeg
     - magicgui
     - matplotlib-base >=3.5
+    - munkres
     - napari
+    - nd2reader
     - numpy
     - pandas
     - python >=3.8
+    - pyyaml
     - qtpy
     - scikit-image >=0.18.3
     - scikit-learn
     - tifffile
-    - trackpy ==0.5.0
+    - toml
+    - tqdm
+    - trackpy >=0.5.0
 
 test:
   imports:
