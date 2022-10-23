@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/palmari-{{ version }}.tar.gz
   sha256: 51cbe731e96db0bc4719082e2e91990488d5eaba35c756df0e4410c4dc1c3358
+  patches:
+    - qtpy.patch  # Use qtpy instead of PyQt5
 
 build:
   noarch: python
