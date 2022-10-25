@@ -1,5 +1,5 @@
 diff --git a/src/palmari/_runner.py b/src/palmari/_runner.py
-index 420d72b..4dc76d1 100644
+index e5765d2..9dbe85c 100644
 --- a/src/palmari/_runner.py
 +++ b/src/palmari/_runner.py
 @@ -13,17 +13,17 @@ from qtpy.QtWidgets import (
