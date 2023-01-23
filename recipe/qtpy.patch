@@ -1,12 +1,12 @@
 diff --git a/src/palmari/_runner.py b/src/palmari/_runner.py
-index e5765d2..9dbe85c 100644
+index 41e0804..9dbe85c 100644
 --- a/src/palmari/_runner.py
 +++ b/src/palmari/_runner.py
 @@ -13,17 +13,17 @@ from qtpy.QtWidgets import (
      QHBoxLayout,
      QLabel,
  )
--from PyQt5.QtCore import pyqtSignal
+-from qtpy.QtCore import pyqtSignal
 +from qtpy.QtCore import Signal
  from magicgui.widgets import FileEdit, FloatSpinBox, LineEdit, ProgressBar
  from threading import Thread
