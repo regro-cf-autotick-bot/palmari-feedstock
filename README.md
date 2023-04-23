@@ -1,11 +1,11 @@
-About palmari
-=============
+About palmari-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/palmari-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hippover/palmari
 
 Package license: LGPL-2.1-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/palmari-feedstock/blob/main/LICENSE.txt)
 
 Summary: A pipeline for PALM movies analysis (pre-processing, localization, drifft correction, tracking)
 
