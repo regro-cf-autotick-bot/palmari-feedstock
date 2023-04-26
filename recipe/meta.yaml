@@ -1,5 +1,5 @@
 {% set name = "palmari" %}
-{% set version = "0.2.21" %}
+{% set version = "0.2.23" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/palmari-{{ version }}.tar.gz
-  sha256: 264c7de598d864b5879483d3c368df7c4b64449798fc28ea1a97995f0453887f
-  patches:
-    - qtpy.patch
+  sha256: 03c8f24de24c31fd2457306db048cc0ea0efb47b21f33b87f15deebf42dd79f7
 
 build:
   noarch: python
