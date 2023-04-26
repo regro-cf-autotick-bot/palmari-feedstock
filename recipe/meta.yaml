@@ -1,5 +1,5 @@
 {% set name = "palmari" %}
-{% set version = "0.2.23" %}
+{% set version = "0.2.28" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/palmari-{{ version }}.tar.gz
-  sha256: 03c8f24de24c31fd2457306db048cc0ea0efb47b21f33b87f15deebf42dd79f7
+  sha256: 168d09fc3ba471a87f4f32ea4952c2869bf0a1a48306f25e8076ce8196379304
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - matplotlib-base >=3.5
     - munkres
     - napari
-    - nd2reader
+    - napari-aicsimageio
     - numpy
     - pandas
     - python >=3.8
@@ -35,7 +35,6 @@ requirements:
     - qtpy
     - scikit-image >=0.18.3
     - scikit-learn
-    - tifffile
     - toml
     - tqdm
     - trackpy >=0.5.0
